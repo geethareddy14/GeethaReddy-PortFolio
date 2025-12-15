@@ -35,6 +35,7 @@ body {
 }
 
 .tech {
+  text-align: center;
   margin-top: 15px;
   color: #38bdf8;
 }
@@ -138,6 +139,17 @@ footer p {
   animation: fadeUp 1.2s ease forwards;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 700ms ease, transform 700ms ease;
+  will-change: opacity, transform;
+}
+
+.reveal.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
 @keyframes fadeUp {
   from {
     opacity: 0;
