@@ -4,83 +4,201 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Geetha Reddy | AI/ML Engineer</title>
+  <meta name="description" content="AI/ML Engineer with strong Data Engineering background specializing in production ML systems." />
 
-  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
+  <!-- Ambient Background -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg__grid"></div>
+    <div class="bg__glow"></div>
+  </div>
+
+  <!-- Top Nav -->
+  <nav class="nav" id="top">
+    <a class="nav__brand" href="#top">GRB<span class="dot">.</span></a>
+
+    <div class="nav__links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="nav__cta">
+      <!-- Replace with your actual resume file path once you add it (e.g., ./assets/Geetha_Resume.pdf) -->
+      <a class="btn btn--ghost" href="#" target="_blank" rel="noreferrer">Resume</a>
+      <a class="btn btn--primary" href="#projects">View Work</a>
+    </div>
+  </nav>
+
   <!-- HERO -->
   <header class="hero">
-    <h1 class="glow">Geetha Reddy Bommarreddy</h1>
-    <h2>AI / ML Engineer • Production ML Systems</h2>
-    <c></c><p class="tech">Databricks • Spark • Kafka • MLflow • Snowflake</p></c>
+    <div class="hero__content">
+      <div class="pill reveal">AI/ML Engineer • Production ML Systems</div>
+
+      <h1 class="glow reveal">Geetha Reddy Bommarreddy</h1>
+
+      <p class="hero__subtitle reveal">
+        I build <span class="neon">AI-ready data platforms</span> and <span class="neon">production ML pipelines</span>
+        across batch and real-time systems.
+      </p>
+
+      <p class="tech reveal">Databricks • Spark • Kafka • MLflow • Snowflake</p>
+
+      <div class="hero__actions reveal">
+        <a class="btn btn--primary" href="#projects">Explore Projects</a>
+        <a class="btn btn--ghost" href="#contact">Contact Me</a>
+      </div>
+
+      <div class="hero__stats reveal">
+        <div class="stat">
+          <div class="stat__num">5+ yrs</div>
+          <div class="stat__label">Data + ML Engineering</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">Batch + RT</div>
+          <div class="stat__label">Pipelines & Inference</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">Finance</div>
+          <div class="stat__label">Risk / Compliance</div>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main class="container">
 
     <!-- ABOUT -->
-    <section class="reveal">
-      <h3>About Me</h3>
-      <p>
-        AI/ML Engineer with a strong Data Engineering background, focused on building
-        <strong>production-grade, scalable ML systems</strong>. I specialize in bridging
-        data platforms with real-world AI applications.
-      </p>
-      <p>
-        My work emphasizes reliability, observability, and performance — delivering
-        ML solutions that operate confidently in enterprise environments.
-      </p>
-    </section>
-
-    <!-- SKILLS -->
-    <section class="reveal">
-      <h3>Core Expertise</h3>
-      <div class="grid">
-        <div class="card">AI / ML Engineering<br><span>Feature Engineering, MLflow, Deployment</span></div>
-        <div class="card">Data Engineering<br><span>Databricks, Spark, Delta Lake</span></div>
-        <div class="card">Streaming & Real-Time<br><span>Kafka, Spark Streaming</span></div>
-        <div class="card">Cloud & MLOps<br><span>AWS, Azure, Docker, CI/CD</span></div>
+    <section class="section reveal" id="about">
+      <h3>About</h3>
+      <div class="two-col">
+        <div class="panel">
+          <p>
+            I’m an <strong>AI/ML Engineer</strong> with a strong <strong>Data Engineering</strong> foundation.
+            I specialize in building <strong>production-grade ML systems</strong>—from ingestion and feature engineering
+            to model training, deployment, and monitoring.
+          </p>
+          <p>
+            My focus is on reliability, observability, and performance—delivering AI solutions that operate confidently
+            in enterprise environments, especially in <strong>finance and risk</strong>.
+          </p>
+        </div>
+        <div class="panel panel--accent">
+          <div class="mini-title">What I optimize for</div>
+          <ul class="list">
+            <li><span class="bullet"></span> Clean, testable pipelines (batch + streaming)</li>
+            <li><span class="bullet"></span> Feature consistency (training ↔ inference)</li>
+            <li><span class="bullet"></span> Monitoring, drift detection, retraining hooks</li>
+            <li><span class="bullet"></span> Cost/performance tuning (Spark/Delta/Snowflake)</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <!-- PROJECTS -->
-    <section class="reveal">
+    <section class="section reveal" id="projects">
       <h3>Selected Projects</h3>
+      <p class="muted">Each project is designed like an enterprise system component—clean architecture, clear READMEs, and production thinking.</p>
+
       <div class="projects">
-        <div class="project-card">
-          <h4>Modern Data Platform for ML</h4>
-          <p>Delta-based data lake enabling analytics and ML workloads.</p>
-          <span>Databricks • PySpark • Airflow</span>
-          <a href="#">View Project →</a>
+        <article class="project-card">
+          <div class="project-card__top">
+            <h4>Financial Risk ML Data Platform</h4>
+            <span class="tag">Foundation</span>
+          </div>
+          <p>Delta-based batch pipelines (Bronze → Silver → Gold) powering risk analytics and ML feature generation.</p>
+          <div class="chips">
+            <span>Databricks</span><span>PySpark</span><span>Delta Lake</span><span>Airflow</span>
+          </div>
+          <a class="link" href="#" target="_blank" rel="noreferrer">View Repo →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__top">
+            <h4>Feature Engineering & ML Training</h4>
+            <span class="tag">ML</span>
+          </div>
+          <p>Scalable feature pipelines with MLflow experiment tracking and reproducible training runs.</p>
+          <div class="chips">
+            <span>MLflow</span><span>PySpark</span><span>scikit-learn</span>
+          </div>
+          <a class="link" href="#" target="_blank" rel="noreferrer">View Repo →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__top">
+            <h4>Real-Time ML Inference</h4>
+            <span class="tag">Streaming</span>
+          </div>
+          <p>Event-driven predictions with streaming enrichment and low-latency scoring endpoints.</p>
+          <div class="chips">
+            <span>Kafka</span><span>Spark Streaming</span><span>FastAPI</span>
+          </div>
+          <a class="link" href="#" target="_blank" rel="noreferrer">View Repo →</a>
+        </article>
+      </div>
+
+      <div class="callout">
+        <div>
+          <div class="callout__title">Want the full end-to-end system?</div>
+          <div class="muted">I’m building this portfolio as an interconnected platform: data → features → ML → serving → monitoring.</div>
         </div>
-        <div class="project-card">
-          <h4>Feature Engineering & ML Training</h4>
-          <p>Scalable feature pipelines with experiment tracking.</p>
-          <span>PySpark • Scikit-learn • MLflow</span>
-          <a href="#">View Project →</a>
+        <a class="btn btn--primary" href="#contact">Let’s talk</a>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section reveal" id="skills">
+      <h3>Core Expertise</h3>
+      <div class="grid">
+        <div class="card">AI / ML Engineering<br><span>Feature Engineering, MLflow, Model Serving, Monitoring</span></div>
+        <div class="card">Data Engineering<br><span>Databricks, Spark, Delta Lake, Snowflake, Orchestration</span></div>
+        <div class="card">Streaming & Real-Time<br><span>Kafka, Spark Structured Streaming, Event-driven ML</span></div>
+        <div class="card">Cloud & MLOps<br><span>AWS/Azure, Docker, CI/CD, Versioning, Observability</span></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section reveal" id="contact">
+      <h3>Contact</h3>
+      <div class="contact">
+        <div class="panel">
+          <div class="mini-title">Open to opportunities</div>
+          <p class="muted">Full-time or contract roles in AI/ML Engineering, ML Engineering, Data Platforms, and Production ML.</p>
+          <div class="contact__links">
+            <a class="btn btn--ghost" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn btn--ghost" href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn btn--primary" href="mailto:geethabommareddy99@gmail.com">Email Me</a>
+          </div>
         </div>
-        <div class="project-card">
-          <h4>Real-Time ML Inference</h4>
-          <p>Event-driven ML predictions with low latency.</p>
-          <span>Kafka • Spark Streaming • FastAPI</span>
-          <a href="#">View Project →</a>
+        <div class="panel panel--accent">
+          <div class="mini-title">Quick info</div>
+          <ul class="list">
+            <li><span class="bullet"></span> Location: Atlanta, GA</li>
+            <li><span class="bullet"></span> Focus: Production ML + Data Platforms</li>
+            <li><span class="bullet"></span> Domains: Finance, Risk, Compliance</li>
+          </ul>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
-  <footer>
-    <a href="https://linkedin.com">LinkedIn</a>
-    <a href="https://github.com">GitHub</a>
-    <a href="mailto:geethabommareddy99@gmail.com">Email</a>
-    <p>© 2025 Geetha Reddy Bommarreddy</p>
+  <footer class="footer">
+    <div class="footer__row">
+      <span class="muted">© 2025 Geetha Reddy Bommarreddy</span>
+      <span class="muted">Built with GitHub Pages</span>
+    </div>
   </footer>
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
