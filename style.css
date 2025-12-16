@@ -366,9 +366,16 @@ h3 {
 
 .link {
   display: inline-block;
-  margin-top: 14px;
+  margin-top: 16px;
+  font-size: 0.95rem;
   font-weight: 800;
   color: var(--neon);
+  letter-spacing: 0.3px;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
 }
 
 .project-card:hover {
