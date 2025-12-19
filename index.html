@@ -22,7 +22,7 @@
 
   <!-- Top Nav -->
   <nav class="nav" id="top">
-    <a class="nav__brand" href="#top">GRB<span class="dot">.</span></a>
+    <a class="nav__brand" href="#top"></a>
     
 
 
@@ -35,9 +35,9 @@
 
     <div class="nav__cta">
       <!-- Replace with your actual resume file path once you add it (e.g., ./assets/Geetha_Resume.pdf) -->
-      <a class="btn btn--ghost" href="--------" target="_blank">Resume</a>
+      <a class="btn btn--ghost" href="assets/Geetha_AI_ML_Resume.pdf" target="_blank">Resume</a>
 
-      <a class="btn btn--primary" href="#projects">View Work</a>
+      <a class="btn btn--primary" href="#projects">View Work</a>  
     </div>
   </nav>
 
@@ -46,14 +46,13 @@
     <div class="hero__content">
       <div class="pill reveal">AI/ML Engineer • Production ML Systems</div>
 
-      <h1 class="glow reveal">Geetha Reddy Bommarreddy</h1>
+      <h1 class="glow reveal">Geetha Reddy Bommareddy <span class="neon">AI/ML Engineer</span></h1>
 
       <p class="hero__subtitle reveal">
-        I build <span class="neon">AI-ready data platforms</span> and <span class="neon">production ML pipelines</span>
-        across batch and real-time systems.
+        Production AI/ML Engineer with 4+ years experience in building risk scoring, fraud detection, and LLM-powered assistants in financial services. I ship end-to-end ML systems: features -> training -> deployment -> monitoring.
       </p>
 
-      <p class="tech reveal">Databricks • Spark • Kafka • MLflow • Snowflake</p>
+      <p class="tech reveal">PyTorch • TensorFlow • XGBoost • MLflow • Docker/Kubernetes • AWS • Databricks • RAG (FAISS/Pinecone) • Spark • Kafka • Snowflake</p>
 
       <div class="hero__actions reveal">
         <a class="btn btn--primary" href="#projects">Explore Projects</a>
@@ -62,16 +61,16 @@
 
       <div class="hero__stats reveal">
         <div class="stat">
-          <div class="stat__num">5+ yrs</div>
-          <div class="stat__label">Data + ML Engineering</div>
+          <div class="stat__num">4+ yrs</div>
+          <div class="stat__label">AI/ML + Data Engineering</div>
         </div>
         <div class="stat">
-          <div class="stat__num">Batch + RT</div>
-          <div class="stat__label">Pipelines & Inference</div>
+          <div class="stat__num">&lt; 3s</div>
+          <div class="stat__label">Real-time Inference Latency</div>
         </div>
         <div class="stat">
-          <div class="stat__num">Finance</div>
-          <div class="stat__label">Risk / Compliance</div>
+          <div class="stat__num">100K+/day</div>
+          <div class="stat__label">Transaction Processed</div>
         </div>
       </div>
     </div>
@@ -85,12 +84,12 @@
       <div class="two-col">
         <div class="panel">
           <p>
-            I’m an <strong>AI/ML Engineer</strong> with a strong <strong>Data Engineering</strong> foundation.
-            I specialize in building <strong>production-grade ML systems</strong>—from ingestion and feature engineering
-            to model training, deployment, and monitoring.
+            I’m an <strong>AI/ML Engineer</strong> in financial services, building production risk scoring and fraud detection systems, plus LLM-powered knowledge assistants using RAG. 
+            My work spans feature engineering, model training, low-latency inference and MLOps <strong>(MLflow, Docker, Kubernetes, CI/CD)</strong>on AWS and Databricks.
+      
           </p>
           <p>
-            My focus is on reliability, observability, and performance—delivering AI solutions that operate confidently
+            I optimize for reliability, observability, and performance—delivering AI solutions that operate confidently
             in enterprise environments, especially in <strong>finance and risk</strong>.
           </p>
         </div>
@@ -103,33 +102,23 @@
             <li><span class="bullet"></span> Cost/performance tuning (Spark/Delta/Snowflake)</li>
           </ul>
         </div>
+        <div class="grid">
+          <div class="card"><strong>Fraud & Risk ML</strong><span>XGBoost, ensembles, anomaly detection, explainability (SHAP)</span></div>
+          <div class="card"><strong>Feature Engineering</strong><span>Streaming + Batch Features, Consistency across train/inference</span></div>
+          <div class="card"><strong>GenAI / RAG</strong><span>GPT/BERT, Hugging Face, FAISS/Pinecone, Summarization & Retrieval</span></div>
+          <div class="card"><strong>MLOps</strong><span>MLflow, Docker, Kubernetes (EKS), Monitoring, Rollbacks</span></div>
+
+        </div>
       </div>
     </section>
 
     <!-- PROJECTS -->
     <section class="section reveal" id="projects">
-      <h3>Selected Projects</h3>
+      <h3>PROJECTS</h3>
       <p class="muted">Each project is designed like an enterprise system component—clean architecture, clear READMEs, and production thinking.</p>
 
-      <div class="projects">
-        <article class="project-card">
-          <div class="project-card__top">
-            <h4>Financial Risk ML Data Platform</h4>
-            <ul class="mini-list">
-                <li>Bronze → Silver → Gold pipeline</li>
-                <li>Risk feature table + training pipeline</li>
-                <li>Batch scoring + FastAPI real-time endpoint</li>
-            </ul>
-
-            <span class="tag">Foundation</span>
-          </div>
-          <p>Delta-based batch pipelines (Bronze → Silver → Gold) powering risk analytics and ML feature generation.</p>
-          <div class="chips">
-            <span>Databricks</span><span>PySpark</span><span>Delta Lake</span><span>Airflow</span>
-          </div>
-          <a class="link" href="https://github.com/geethareddy14/Project1-financial-risk-ml-platform" target="_blank" rel="noreferrer">View Repo →</a>
-
-        </article>
+      <div class="Projects">
+        
 
         <article class="project-card">
           <div class="project-card__top">
@@ -154,6 +143,24 @@
             <span>Kafka</span><span>Spark Streaming</span><span>FastAPI</span>
           </div>
           <span class="link link--disabled">Coming Soon</span>
+
+        </article>
+        <article class="project-card">
+          <div class="project-card__top">
+            <h4>Financial Risk ML Data Platform</h4>
+            <ul class="mini-list">
+                <li>Bronze → Silver → Gold pipeline</li>
+                <li>Risk feature table + training pipeline</li>
+                <li>Batch scoring + FastAPI real-time endpoint</li>
+            </ul>
+
+            <span class="tag">Foundation</span>
+          </div>
+          <p>Delta-based batch pipelines (Bronze → Silver → Gold) powering risk analytics and ML feature generation.</p>
+          <div class="chips">
+            <span>Databricks</span><span>PySpark</span><span>Delta Lake</span><span>Airflow</span>
+          </div>
+          <a class="link" href="https://github.com/geethareddy14/Project1-financial-risk-ml-platform" target="_blank" rel="noreferrer">View Repo →</a>
 
         </article>
       </div>
@@ -186,7 +193,7 @@
           <div class="mini-title">Open to opportunities</div>
           <p class="muted">Full-time or contract roles in AI/ML Engineering, ML Engineering, Data Platforms, and Production ML.</p>
           <div class="contact__links">
-            <a class="btn btn--ghost" href="https://www.linkedin.com/in/www.linkedin.com/in/geethareddy14" target="_blank">LinkedIn</a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com/in/geethareddy14" target="_blank">LinkedIn</a>
             <a class="btn btn--ghost" href="https://github.com/geethareddy14" target="_blank">GitHub</a>
 
             <a class="btn btn--primary" href="mailto:geethabommareddy99@gmail.com">Email Me</a>
