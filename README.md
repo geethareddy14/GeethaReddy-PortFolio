@@ -6,7 +6,7 @@
 
 - **Programming:** Python  
 - **ML & AI:** XGBoost, PyTorch, TensorFlow, Scikit-learn  
-- **GenAI:** LangChain, OpenAI GPT, Hugging Face, FAISS  
+- **GenAI:** LangChain, OpenAI GPT, Hugging Face, FAISS , NLTK
 - **MLOps:** MLflow, Docker, Kubernetes  
 - **Data:** Pandas, NumPy, PySpark  
 - **Cloud:** AWS (S3, SageMaker, EC2)  
