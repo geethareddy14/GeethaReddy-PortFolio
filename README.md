@@ -1,6 +1,7 @@
-# Project1-financial-risk-ml-platform
-# Project2_Feature-Engineering-ml-training
-# Project3-real-time-ml-inference
+# Fraud-detection-risk-scoring-PySpark
+# Feature-store-mlops-pipeline
+# realtime-ml-inference-kubernetes
+
 
 ## 🧰 Tech Stack
 
